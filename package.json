@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile": "tsc --watch"
+    "compile": "tsc --watch",
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "Anita_Baron <anita.baron.it@gmail.com>",

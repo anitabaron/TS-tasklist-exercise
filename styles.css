@@ -11,7 +11,7 @@ body {
 
 /* Main Form Container */
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 450px;
   background-color: #ffffff;
   padding: 20px;
@@ -114,7 +114,6 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
-    width: 100%;
     padding: 16px;
   }
 

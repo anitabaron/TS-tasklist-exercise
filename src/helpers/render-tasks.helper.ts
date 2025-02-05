@@ -1,4 +1,4 @@
-import { Task } from "../types/types";
+import { Task } from "../types/types.js";
 
 export const renderTasks = (
   tasks: Task[],
@@ -32,4 +32,11 @@ export const renderTasks = (
     // taskElement.innerText = task.name;
     // tasksContainerElement.appendChild(taskElement);
   });
+};
+
+const add = (a: number, b: number) => {
+  return a + b; // type number
+};
+const sum = (a: number, b: number) => {
+  return `${a + b}`; // type string
 };
