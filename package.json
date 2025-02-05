@@ -1,0 +1,12 @@
+{
+  "name": "type",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "Anita_Baron <anita.baron.it@gmail.com>",
+  "license": "ISC",
+  "description": ""
+}
