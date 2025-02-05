@@ -5,10 +5,16 @@ This repository is created as part of a learning exercise, following the tutoria
 
 The goal of this project is to **improve TypeScript skills** and **gain hands-on experience** with TypeScript in a real-world application.
 
+## 📝 About the Project
+
+This is a **task list application** that allows users to manage tasks with a **category-based structure**.  
+Users can **add and remove tasks**, organizing them into different categories for better task management.
+
 ## 📌 Learning Objectives
 
-- Understanding TypeScript
-- Implementing strong typing in a task management app
+- Understanding **TypeScript**
+- Implementing typing in a task management app
+- Exploring **GitHub Copilot** for AI-assisted coding
 
 This is a **work in progress**, and further improvements will be made as I advance in my learning.
 

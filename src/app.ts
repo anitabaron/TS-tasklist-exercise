@@ -33,9 +33,9 @@ addButtonElement.addEventListener("click", (event: Event) => {
   renderTasks(tasks, tasksContainerElement);
   tasksInputElement.value = "";
 });
-// addTask({ name: "Zadanie ready", done: true });
 addTask({ name: "Zadanie ready", done: true, category: "sport" });
 renderTasks(tasks, tasksContainerElement);
+// addTask({ name: "Zadanie ready", done: true });
 
 // <li>
 //   <label for="task-1"></label>Zadanie nr 1

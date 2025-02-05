@@ -1,15 +1,129 @@
+/* General Styles */
 body {
-  background-color: antiquewhite;
+  background-color: #f4f4f9;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.sport {
-  color: dodgerblue;
+/* Main Form Container */
+.container {
+  width: 90%;
+  max-width: 450px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  /* margin-bottom: 12px; */
+  font-size: 16px;
+}
+
+/* Task Categories */
+.categories {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.categories li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.categories input[type="radio"] {
+  accent-color: #007bff;
+  margin: 0;
+}
+
+/* Task List */
+.tasks {
+  list-style: none;
+  padding: 0;
+}
+
+.tasks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: rgb(252, 252, 252);
+  transition: background 0.3s;
+}
+
+.tasks li:hover {
+  background-color: #eaeaea;
+}
+
+/* Category-Specific Colors */
+.general {
+  color: #333;
+  font-weight: bold;
 }
 
 .work {
-  color: darkorange;
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+.sport {
+  color: #1e90ff;
+  font-weight: bold;
 }
 
 .hobby {
-  color: green;
+  color: #008000;
+  font-weight: bold;
+}
+
+/* Add Button */
+button {
+  background-color: #007bff;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .categories {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  button {
+    padding: 10px;
+  }
 }
