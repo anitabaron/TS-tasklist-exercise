@@ -7,6 +7,9 @@
     "build": "tsc",
     "postinstall": "npm run build"
   },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  },
   "keywords": [],
   "author": "Anita_Baron <anita.baron.it@gmail.com>",
   "license": "ISC",
