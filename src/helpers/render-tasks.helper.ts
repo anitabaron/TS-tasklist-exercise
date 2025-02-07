@@ -29,10 +29,10 @@ export const renderTasks = (
     taskElement.appendChild(checkboxElement);
 
     tasksContainerElement.appendChild(taskElement);
-    // taskElement.innerText = task.name;
-    // tasksContainerElement.appendChild(taskElement);
   });
 };
+// taskElement.innerText = task.name;
+// tasksContainerElement.appendChild(taskElement);
 
 const add = (a: number, b: number) => {
   return a + b; // type number
