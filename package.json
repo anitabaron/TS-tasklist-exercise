@@ -5,7 +5,8 @@
   "scripts": {
     "compile": "tsc --watch",
     "build": "tsc",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "start": "node dist/app.js"
   },
   "devDependencies": {
     "typescript": "^4.0.0"
