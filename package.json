@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "tsc --watch",
-    "build": "tsc && cp -v index.html ./dist/index.html && cp -v styles.css ./dist/styles.css && ls",
+    "build": "tsc && cp -a ./src/static/. ./dist/.",
     "postinstall": "npm run build",
     "start": "node dist/app.js"
   },
