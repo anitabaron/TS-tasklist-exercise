@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Type</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="/app.js"></script>
   </head>
   <body>
     <form class="container" autocomplete="off">
       <label for="name">TS-tasklist-exercise</label>
       <input type="text" id="name" />
+
       <ul class="categories">
         <li>
           <label for="category-general">general</label>
@@ -44,11 +46,12 @@
           />
         </li>
       </ul>
+
       <button>Add</button>
+
       <p>To do:</p>
       <ul class="tasks"></ul>
     </form>
-    <script type="module" src="/app.js" defer></script>
   </body>
 </html>
 
