@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "compile": "tsc --watch",
-    "build": "tsc && copyfiles -u 1 ./src/static/**/* ./dist/static",
+    "build": "tsc && copyfiles -u 1 ./src/static/**/* ./dist",
     "postinstall": "npm run build",
     "start": "node dist/app.js"
   },
