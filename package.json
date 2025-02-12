@@ -4,9 +4,10 @@
   "main": "index.js",
   "scripts": {
     "compile": "tsc --watch",
-    "build": "tsc && copyfiles -u 1 ./src/static/**/* ./dist",
+    "build": "tsc && copyfiles -u 1 ./src/static/**/* ./dist && move dist\\static\\index.html dist\\",
     "postinstall": "npm run build",
     "start": "node dist/app.js",
+    "vercel-build": "npm run build",
     "server": "live-server --watch=dist --port=8080"
   },
   "devDependencies": {
