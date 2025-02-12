@@ -5,12 +5,11 @@
   "type": "module",
   "scripts": {
     "compile": "tsc --watch",
-    "build": "tsc && copyfiles -u 1 ./src/static/**/* ./dist",
+    "build": "tsc && node build.mjs",
     "postinstall": "npm run build",
     "start": "node dist/app.js"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1",
     "typescript": "^4.0.0"
   },
   "keywords": [],
