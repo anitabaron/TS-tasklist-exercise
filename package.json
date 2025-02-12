@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "compile": "tsc --watch",
-    "build": "tsc && copyfiles -a ./src/static/. ./dist/.",
+    "build": "tsc && copyfiles -u 1 ./src/static/**/* ./dist",
     "postinstall": "npm run build",
     "start": "node dist/app.js"
   },
   "devDependencies": {
-    "typescript": "^4.0.0",
-    "copyfiles": "^2.4.1"
+    "copyfiles": "^2.4.1",
+    "typescript": "^4.0.0"
   },
   "keywords": [],
   "author": "Anita_Baron <anita.baron.it@gmail.com>",

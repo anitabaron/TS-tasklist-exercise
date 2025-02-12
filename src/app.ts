@@ -1,7 +1,7 @@
 import { Task, Category } from "./types/types.js";
 import { renderTasks } from "./helpers/render-tasks.helper.js";
 import { renderCategories } from "./helpers/render-categories.helper.js";
-import { TaskClass } from "./classes/TaskClass.js";
+import { TaskClass } from "./classes/taskClass.js";
 
 const tasksContainerElement: HTMLElement = document.querySelector(".tasks");
 const tasksInputElement: HTMLInputElement = document.querySelector("#name");
