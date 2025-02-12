@@ -1,13 +1,13 @@
 import { Category } from "../types/types.js";
 
 const handleCategoryChange = (category: Category) => {
-  if (category === Category.GENERAL) {
+  if (category === "general") {
     console.log("category general");
-  } else if (category === Category.WORK) {
+  } else if (category === "work") {
     console.log("category work");
-  } else if (category === Category.SPORT) {
+  } else if (category === "sport") {
     console.log("category sport");
-  } else if (category === Category.HOBBY) {
+  } else if (category === "hobby") {
     console.log("category hobby");
   }
 };
