@@ -1,16 +1,11 @@
 import { Task, Category } from "./types/types.js";
 import { renderTasks } from "./helpers/render-tasks.helper.js";
-import { renderCategories } from "./helpers/render-categories.helper.js";
+const value: string = "Hello World";
+const value2: string = "Hello World2";
 
 const tasksContainerElement: HTMLElement = document.querySelector(".tasks");
 const tasksInputElement: HTMLInputElement = document.querySelector("#name");
 const addButtonElement: HTMLButtonElement = document.querySelector("button");
-const categoriesContainerElement: HTMLElement =
-  document.querySelector(".categories");
-
-const categories: Category[] = ["general", "work", "sport", "hobby"];
-
-let selectedCategory: Category;
 
 const tasks: Task[] = [
   { name: "Zadanie nr 1", done: false, category: "general" },
@@ -24,11 +19,11 @@ const addTask = (task: Task) => {
   tasks.push(task);
 };
 
-const updateSelectedCategory = (newCategory: Category) => {
-  selectedCategory = newCategory;
-};
-
 addButtonElement.addEventListener("click", (event: Event) => {
+  const selectedRadioElement: HTMLInputElement = document.querySelector(
+    "input[type='radio']:checked"
+  );
+  const selectedCategory: Category = selectedRadioElement.value as Category;
   event.preventDefault();
   addTask({
     name: tasksInputElement.value,
@@ -36,34 +31,13 @@ addButtonElement.addEventListener("click", (event: Event) => {
     category: selectedCategory,
   });
   renderTasks(tasks, tasksContainerElement);
+  tasksInputElement.value = "";
 });
 
-// addButtonElement.addEventListener("click", (event: Event) => {
-//   event.preventDefault();
-//   const selectedRadioElement: HTMLInputElement = document.querySelector(
-//     "input[type='radio']:checked"
-//   );
-//   const selectedCategory: Category = selectedRadioElement.value as Category;
-//   addTask({
-//     name: tasksInputElement.value,
-//     done: false,
-//     category: selectedCategory,
-//   });
-//   renderTasks(tasks, tasksContainerElement);
-//   tasksInputElement.value = "";
-// });
-
 addTask({ name: "Zadanie ready", done: true, category: "sport" });
-addTask({ name: "Zrobić trening", done: false, category: "sport" });
-
-renderCategories(
-  categories,
-  categoriesContainerElement,
-  updateSelectedCategory
-);
-
 renderTasks(tasks, tasksContainerElement);
 
+// const categories: Category[] = ["general", "work", "sport", "hobby"];
 // const tasks: string[] = ["Zadanie nr 1", "Zadanie nr 2", "Zadanie nr 3"];
 
 // addTask({ name: "Zadanie ready", done: true });

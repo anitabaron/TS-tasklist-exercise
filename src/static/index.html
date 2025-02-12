@@ -7,15 +7,47 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>TypeScript</title>
     <link rel="stylesheet" href="./styles.css" />
-    <!-- <script type="module" src="./app.js"></script> -->
-    <script type="module" src="../../dist/app.js"></script>
+    <script type="module" src="./app.js"></script>
+    <!-- <script type="module" src="../../dist/app.js"></script> -->
   </head>
   <body>
     <form class="container" autocomplete="off">
       <label for="name">TS-tasklist-exercise</label>
       <input type="text" id="name" />
 
-      <ul class="categories"></ul>
+      <ul class="categories">
+        <li>
+          <label for="category-general">general</label>
+          <input
+            type="radio"
+            name="category"
+            value="general"
+            id="category-general"
+          />
+        </li>
+        <li>
+          <label for="category-work">work</label>
+          <input type="radio" name="category" value="work" id="category-work" />
+        </li>
+        <li>
+          <label for="category-sport">sport</label>
+          <input
+            type="radio"
+            name="category"
+            value="sport"
+            id="category-sport"
+          />
+        </li>
+        <li>
+          <label for="category-hobby">hobby</label>
+          <input
+            type="radio"
+            name="category"
+            value="hobby"
+            id="category-hobby"
+          />
+        </li>
+      </ul>
 
       <button>Add</button>
 
