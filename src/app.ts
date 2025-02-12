@@ -1,7 +1,5 @@
 import { Task, Category } from "./types/types.js";
 import { renderTasks } from "./helpers/render-tasks.helper.js";
-const value: string = "Hello World";
-const value2: string = "Hello World2";
 
 const tasksContainerElement: HTMLElement = document.querySelector(".tasks");
 const tasksInputElement: HTMLInputElement = document.querySelector("#name");
