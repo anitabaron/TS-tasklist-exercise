@@ -2,15 +2,17 @@
   "name": "ts.tasklist.exercise",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "compile": "tsc --watch",
     "build": "tsc && copyfiles -u 1 ./src/static/**/* ./dist",
     "postinstall": "npm run build",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "vercel-build": "npm run build",
+    "server": "live-server --watch=dist --port=8080"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
+    "live-server": "^1.2.2",
     "typescript": "^4.0.0"
   },
   "keywords": [],
