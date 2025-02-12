@@ -2,9 +2,10 @@
   "name": "ts.tasklist.exercise",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "compile": "tsc --watch",
-    "build": "tsc && cp -a ./src/static/. ./dist/.",
+    "build": "tsc && node build.mjs",
     "postinstall": "npm run build",
     "start": "node dist/app.js"
   },
