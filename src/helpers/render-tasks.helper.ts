@@ -31,12 +31,3 @@ export const renderTasks = (
     tasksContainerElement.appendChild(taskElement);
   });
 };
-// taskElement.innerText = task.name;
-// tasksContainerElement.appendChild(taskElement);
-
-const add = (a: number, b: number) => {
-  return a + b; // type number
-};
-const sum = (a: number, b: number) => {
-  return `${a + b}`; // type string
-};
