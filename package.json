@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "compile": "tsc --watch",
-    "build": "tsc && node build.mjs",
     "postinstall": "npm run build",
-    "start": "node dist/app.js"
+    "build": "tsc && npx --yes cpy-cli --flat ./src/static/** ./dist",
+    "start": "npx http-server -o ./dist"
   },
   "devDependencies": {
     "typescript": "^4.0.0"
